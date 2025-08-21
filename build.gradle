@@ -44,6 +44,8 @@ dependencies {
 	implementation 'org.flywaydb:flyway-core'
     // https://mvnrepository.com/artifact/org.flywaydb/flyway-mysql
     implementation("org.flywaydb:flyway-mysql:11.11.1")
+    // https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-validation
+    implementation("org.springframework.boot:spring-boot-starter-validation:4.0.0-M1")
 	compileOnly 'org.projectlombok:lombok'
 	developmentOnly 'org.springframework.boot:spring-boot-devtools'
 	runtimeOnly 'com.mysql:mysql-connector-j'
