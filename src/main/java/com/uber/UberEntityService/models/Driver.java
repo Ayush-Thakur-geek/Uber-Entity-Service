@@ -9,7 +9,6 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.hibernate.annotations.Fetch;
 import org.hibernate.annotations.FetchMode;
-import org.springframework.boot.context.properties.bind.DefaultValue;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -50,6 +49,9 @@ public class Driver extends BaseModel {
     @DecimalMin(value = "0.01", message = "Rating must be greater than or equal to 0.01")
     @DecimalMax(value = "5.00", message = "Rating must be less than or equal to 5.0")
     private Double rating;
+
+    @OneToOne(cascade = CascadeType.ALL)
+    private Booking activeBooking;
 
     @OneToMany(mappedBy = "driver", fetch = FetchType.LAZY) // By default, the fetch mode is LAZY for ONE to MANY.
     @Fetch(FetchMode.SUBSELECT) // But remember to annotate the service method with @Transactional

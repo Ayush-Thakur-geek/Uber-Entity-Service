@@ -1,19 +1,19 @@
 package com.uber.UberEntityService.models;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import java.util.Date;
 
 @Entity
-@Table
-@Data
+@Getter
+@Setter
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
+@Table(indexes = {
+        @Index(columnList = "driver_id")
+})
 public class Booking extends BaseModel {
 
     @Enumerated(value = EnumType.STRING) // Default would be EnumType.ORDINAL, i.e. tiny int.
@@ -32,6 +32,12 @@ public class Booking extends BaseModel {
 
     @ManyToOne(fetch = FetchType.LAZY)
     private Passenger passenger;
+
+    @OneToOne(cascade = CascadeType.ALL)
+    private ExactLocation startLocation;
+
+    @OneToOne(cascade = CascadeType.ALL)
+    private ExactLocation endLocation;
 
 }
 /*
