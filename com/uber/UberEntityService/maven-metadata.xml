@@ -3,10 +3,11 @@
   <groupId>com.uber</groupId>
   <artifactId>UberEntityService</artifactId>
   <versioning>
-    <latest>0.0.1-SNAPSHOT</latest>
+    <latest>0.0.2-SNAPSHOT</latest>
     <versions>
       <version>0.0.1-SNAPSHOT</version>
+      <version>0.0.2-SNAPSHOT</version>
     </versions>
-    <lastUpdated>20250819172045</lastUpdated>
+    <lastUpdated>20250822210140</lastUpdated>
   </versioning>
 </metadata>

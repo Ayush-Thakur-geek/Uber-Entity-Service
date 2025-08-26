@@ -6,7 +6,7 @@ plugins {
 }
 
 group = 'com.uber'
-version = '0.0.2-SNAPSHOT'
+version = '0.0.3-SNAPSHOT'
 description = 'Demo project for Spring Boot'
 
 java {

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata modelVersion="1.1.0">
+  <groupId>com.uber</groupId>
+  <artifactId>UberEntityService</artifactId>
+  <versioning>
+    <lastUpdated>20250822210045</lastUpdated>
+    <snapshot>
+      <timestamp>20250822.210045</timestamp>
+      <buildNumber>1</buildNumber>
+    </snapshot>
+    <snapshotVersions>
+      <snapshotVersion>
+        <extension>module</extension>
+        <value>0.0.2-20250822.210045-1</value>
+        <updated>20250822210045</updated>
+      </snapshotVersion>
+      <snapshotVersion>
+        <extension>pom</extension>
+        <value>0.0.2-20250822.210045-1</value>
+        <updated>20250822210045</updated>
+      </snapshotVersion>
+      <snapshotVersion>
+        <classifier>plain</classifier>
+        <extension>jar</extension>
+        <value>0.0.2-20250822.210045-1</value>
+        <updated>20250822210045</updated>
+      </snapshotVersion>
+    </snapshotVersions>
+  </versioning>
+  <version>0.0.2-SNAPSHOT</version>
+</metadata>
