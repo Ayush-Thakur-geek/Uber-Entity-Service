@@ -7,7 +7,7 @@ plugins {
 
 group = 'com.uber'
 version = '0.0.3-SNAPSHOT'
-description = 'Demo project for Spring Boot'
+description = 'A library that contains redundant entities and models for this application.'
 
 java {
 	toolchain {
@@ -30,7 +30,7 @@ publishing {
 
     repositories {
         maven {
-            url = uri('C:\\Users\\Win\\Desktop\\projects\\spring\\Uber\\UberEntityService\\UberEntityService')
+            url = uri('C:\\Users\\Win\\Desktop\\projects\\uber\\Uber-Entity-Service')
         }
     }
 }
